@@ -10,11 +10,11 @@ y<-subset(fis,select=6:7)
 d<-subset(fis,select=2)
 
 ## Table 1. Descriptive statistics
-table.1<-sapply(data.frame(x,y),function(x)c(max=max(x),
-                                             mean=mean(x),
-                                             med=median(x),
-                                             min=min(x),
-                                             std=sd(x)))
+table.1<-sapply(data.frame(x,y),function(x)c(Min=min(x),
+                                             Med=median(x),
+                                             Mean=mean(x),
+                                             Max=max(x),
+                                             Std=sd(x)))
 print(round(t(table.1),1))
 
 ## Table 2. 2015 SOA
